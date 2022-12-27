@@ -46,31 +46,64 @@
                             </button>
                         </div>
                     </div>
-                    <div class="col-6 collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-                        <ul class="navbar-nav mb-lg-0">
-                            <!-- <li class="nav-item dropdown">
-                                <a
-                                    class="nav-link dropdown-toggle"
-                                    href="#"
-                                    role="button"
-                                    data-bs-toggle="dropdown"
-                                    aria-expanded="false"
-                                >
-                                  
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">My Profile</a></li>
+                    <div class="d-flex gap-4">
+                        <button type="button" class="btn icon">
+                        <i class="bi bi-heart text-white fs-5"></i>
+                    </button>
+                    <button type="button" class="btn icon">
+                        <i class="bi bi-cart text-white fs-5"></i>
+                    </button>
+                    <button type="button" class="btn icon">
+                        <i class="bi bi-bell text-white fs-5"></i>
+                    </button>
+                    <div class="dropdown">
+                        <button class="btn text-light dropdown-toggle border-dark" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          <img src="./imgs/login.png" class="rounded-circle" alt="">
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-dark">
+                            <li><a class="dropdown-item" href="#">My Profile</a></li>
                                     <li><hr class="dropdown-divider" /></li>
                                     <li><a class="dropdown-item" href="#">Sign Out</a></li>
-                                </ul>
-                            </li> -->
-                            <li class="nav-item fs-3  p-0 d-flex">
-                                <i class="bi bi-cart-fill p-2 text-center"></i>
-                            </li>
                         </ul>
                     </div>
+                </div>
             </div>
         </nav>
+        <div class="bg-dark  d-fixed" style="width: 20%;">
+            <div class="text-light d-flex gap-2 justify-content-center align-items-center">
+                <i class="bi bi-microsoft text-light fs-4 pb-1 "></i>
+                <h5>Categories</h5>
+            </div>
+            <ul class="list-group list-group-flush d-flex justify-content-center">
+                <li class="list-group-item bg-dark text-light">Echo and Alexa</li>
+                <li class="list-group-item bg-dark text-light">Kindle</li>
+                <li class="list-group-item bg-dark text-light">Books</li>
+                <li class="list-group-item bg-dark text-light">Electronics</li>
+                <li class="list-group-item bg-dark text-light">Home and Garden</li>
+                <li class="list-group-item bg-dark text-light">Fashion</li>
+                <li class="list-group-item bg-dark text-light">Health and Beauty</li>
+                <li class="list-group-item bg-dark text-light">Automotive</li>
+                <li class="list-group-item bg-dark text-light">Sport and Tourism</li>
+                <li class="list-group-item bg-dark text-light">Games</li>
+                <li class="list-group-item bg-dark text-light">Film and Music</li>
+                <li class="list-group-item bg-dark text-light">Animals</li>
+                <li class="list-group-item bg-dark text-light">Hobby</li>
+                <li class="list-group-item bg-dark text-light">Gift Cards</li>
+              </ul>
+
+              <div class="bg-dark text-light d-flex gap-2 justify-content-center align-items-center">
+                <i class="bi bi-percent text-light fs-4 pb-1"></i>
+                <h5>Sell on Amazon</h5>
+              </div>
+              <div class="bg-dark text-light d-flex gap-2 justify-content-center align-items-center">
+                <i class="bi bi-question-circle text-light fs-4 pb-1"></i>
+                <h5>Help</h5>
+              </div>
+              <div class="bg-dark text-light d-flex gap-2 justify-content-center align-items-center">
+                <i class="bi bi-box-arrow-in-right text-light fs-4 pb-1"></i>
+                <h5>Log Out</h5>
+              </div>
+        </div>
         <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
     </body>
 </html>
