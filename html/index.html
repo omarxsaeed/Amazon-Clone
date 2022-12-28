@@ -4,99 +4,80 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Amazon Clone</title>
         <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css" />
-        <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css"
+        />
+        <link rel="stylesheet" href="../main.css" />
+
+        <title>Document</title>
     </head>
     <body>
-        <nav class="navbar navbar-expand-lg bg-light">
+        <nav class="navbar navbar-dark navbar-expand-lg bg-dark fs-3">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">Navbar</a>
-                <button
-                    class="navbar-toggler"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent"
-                    aria-controls="navbarSupportedContent"
-                    aria-expanded="false"
-                    aria-label="Toggle navigation"
-                >
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Link</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a
-                                class="nav-link dropdown-toggle"
-                                href="#"
-                                role="button"
-                                data-bs-toggle="dropdown"
-                                aria-expanded="false"
-                            >
-                                Dropdown
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li><hr class="dropdown-divider" /></li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link disabled">Disabled</a>
-                        </li>
-                    </ul>
-                    <form class="d-flex" role="search">
+                <div class="col-6 d-flex justify-content-evenly align-items-center">
+                    <a class="navbar-brand pt-3" href="#">
+                        <img src="../imgs/amazon.png" alt="Bootstrap" height="36" />
+                    </a>
+
+                    <div class="input-group w-75">
+                        <button
+                            class="btn btn-outline-secondary dropdown-toggle text-light"
+                            type="button"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false"
+                        >
+                            All Categories
+                        </button>
+
                         <input
-                            class="form-control me-2"
-                            type="search"
-                            placeholder="Search"
-                            aria-label="Search"
+                            type="text"
+                            class="form-control bg-dark text-white"
+                            placeholder="Search..."
+                            aria-label="Text input with dropdown button"
+                            style="border: #6c757d 1px solid"
                         />
-                        <button class="btn btn-outline-success" type="submit">Search</button>
-                    </form>
+                        <ul class="dropdown-menu dropdown-menu-dark">
+                            <li><a class="dropdown-item" href="#">Kindle</a></li>
+                            <li><a class="dropdown-item" href="#">Electronics</a></li>
+                            <li><a class="dropdown-item" href="#">Fashion</a></li>
+                            <li><a class="dropdown-item" href="#">Games</a></li>
+                            <li><a class="dropdown-item" href="#">Animals</a></li>
+                        </ul>
+                        <button type="button" class="btn btn-warning">
+                            <i class="bi bi-search text-white fs-5"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="d-flex gap-4">
+                    <button type="button" class="btn icon">
+                        <i class="bi bi-heart text-white fs-5"></i>
+                    </button>
+                    <button type="button" class="btn icon">
+                        <i class="bi bi-cart text-white fs-5"></i>
+                    </button>
+                    <button type="button" class="btn icon">
+                        <i class="bi bi-bell text-white fs-5"></i>
+                    </button>
+                    <div class="dropdown">
+                        <button
+                            class="btn text-light dropdown-toggle border-dark"
+                            type="button"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false"
+                        >
+                            <img src="../imgs/login.png" class="rounded-circle circle-border" alt="" />
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-dark dropdown-menu-end">
+                            <li><a class="dropdown-item" href="#">My Profile</a></li>
+                            <li><hr class="dropdown-divider" /></li>
+                            <li><a class="dropdown-item" href="#">Sign Out</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </nav>
-        <main>
-            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="..." class="d-block w-100" alt="..." />
-                    </div>
-                    <div class="carousel-item">
-                        <img src="..." class="d-block w-100" alt="..." />
-                    </div>
-                    <div class="carousel-item">
-                        <img src="..." class="d-block w-100" alt="..." />
-                    </div>
-                </div>
-                <button
-                    class="carousel-control-prev"
-                    type="button"
-                    data-bs-target="#carouselExampleControls"
-                    data-bs-slide="prev"
-                >
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button
-                    class="carousel-control-next"
-                    type="button"
-                    data-bs-target="#carouselExampleControls"
-                    data-bs-slide="next"
-                >
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
-            </div>
-        </main>
         <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
     </body>
 </html>

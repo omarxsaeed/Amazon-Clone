@@ -44,3 +44,15 @@ body {
 /* .bi-cart-fill:hover{
 background-color: #ff9900;
 } */
+
+#prime {
+    display: inline-block;
+}
+
+.prime-img {
+    width: 15%;
+}
+
+.text-warning {
+    color: #ff9900 !important;
+}
