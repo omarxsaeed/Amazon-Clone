@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <title>Sign-in</title>
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css"
+/>
+</head>
+<body>
+  <nav class="navbar navbar-dark navbar-expand-lg bg-dark fs-3">
+    <div class="container-fluid">
+        <div class="col-6 d-flex justify-content-evenly align-items-center">
+            <a class="navbar-brand pt-3" href="#">
+                <img src="../img/amazon.png" alt="Bootstrap" height="36" />
+            </a>
+
+            <div class="input-group w-75">
+                <button
+                    class="btn btn-outline-secondary dropdown-toggle text-light"
+                    type="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                >
+                    All Categories
+                </button>
+
+                <input
+                    type="text"
+                    class="form-control bg-dark text-white"
+                    placeholder="Search..."
+                    aria-label="Text input with dropdown button"
+                    style="border: #6c757d 1px solid"
+                />
+                <ul class="dropdown-menu dropdown-menu-dark">
+                    <li><a class="dropdown-item" href="#">Kindle</a></li>
+                    <li><a class="dropdown-item" href="#">Electronics</a></li>
+                    <li><a class="dropdown-item" href="#">Fashion</a></li>
+                    <li><a class="dropdown-item" href="#">Games</a></li>
+                    <li><a class="dropdown-item" href="#">Animals</a></li>
+                </ul>
+                <button type="button" class="btn btn-warning">
+                    <i class="bi bi-search text-white fs-5"></i>
+                </button>
+            </div>
+        </div>
+        <div class="d-flex gap-4">
+            <button type="button" class="btn icon">
+                <i class="bi bi-heart text-white fs-5"></i>
+            </button>
+            <button type="button" class="btn icon">
+                <i class="bi bi-cart text-white fs-5"></i>
+            </button>
+            <button type="button" class="btn icon">
+                <i class="bi bi-bell text-white fs-5"></i>
+            </button>
+            <div class="dropdown">
+                <button
+                    class="btn text-light dropdown-toggle border-dark"
+                    type="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                >
+                    <img src="./imgs/login.png" class="rounded-circle circle-border" alt="" />
+                </button>
+                <ul class="dropdown-menu dropdown-menu-dark dropdown-menu-end">
+                    <li><a class="dropdown-item" href="#">My Profile</a></li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li><a class="dropdown-item" href="#">Sign Out</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>
+  <header class="w-100 h-100">
+    <div class="container   ">
+      <div class="row p-4">
+        
+        <div class="col-7 p-5">
+          <h3>Find everything you love at <span>Amazon </span><p>the world's largest online marketplace.</p></h3>
+          <div class="h-35 w-25 mt-5 position-absolute  shadow-sm --bs-body-color-rgb bg-light rounded-5 p-4">
+            <h6>New here?</h6>
+            <button type="button" class=" text-center btn btn-info --bs-btn-bg:#c3e8f0d4" >Create your free Amazon account</button>
+            <p class="p-2">Shop anything, from books and groceries to gadgets and furniture</p>
+          </div>
+
+        <div class="col-8">
+          
+        </div>
+      </div>
+      
+      <div class="col-4 ">
+        <div class=" w-35 h-50 p-4 m-5 text-center position-absolute  shadow-sm --bs-body-color-rgb bg-light rounded-5 ">
+            <h3>Log in to your account</h3>
+              <form>
+                <input type="email" class="form-control "  placeholder="Email">
+                <input type="password" class="form-control"  placeholder="Password">
+                <div class="row">
+                  <button type="button" class="btn btn-warning">Log in</button>
+                  <div class="col-5 mt-5">
+                    <p>I forgot my password</p>
+                    <p>I can't log in</p>
+                  </div>
+                <div class="col-7">
+                  <p>By logging in, you agree to Amazon's Conditions of Use and privacy Notice.</p>
+                </div>
+                </div>
+              </form>
+              </div>
+        </div>
+
+        </div>
+      </div>
+
+  </header>
+  
+  
+      </div>
+    
+
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+
+</body>
+</html>
