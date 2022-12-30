@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" type="image/png" href="logo.ico" />
+        <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css" />
+        <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css" />
+
+        <style>
+            * {
+                padding: 0;
+                margin: 0;
+                box-sizing: border-box;
+            }
+
+            .head-name {
+                display: inline-block;
+                width: 25rem;
+            }
+            .head-price {
+                display: inline-block;
+                width: 10rem;
+            }
+            @media (max-width: 770px) {
+                .head-price {
+                    margin-top: 1rem;
+                }
+            }
+        </style>
+        <title>Product</title>
+    </head>
+    <body>
+        <nav class="navbar navbar-dark navbar-expand-lg bg-dark fs-3">
+            <div class="container-fluid d-flex flex-column flex-md-row">
+                <div
+                    class="col-md-6 col-12 flex-column flex-md-row d-flex justify-content-evenly align-items-md-center"
+                >
+                    <div class="d-flex flex-row justify-content-between align-items-normal">
+                        <a class="navbar-brand pt-3" href="index.html">
+                            <img src="../imgs/amazon.png" alt="Amazon logo" height="36" />
+                        </a>
+                        <div class="dropdown d-block d-md-none">
+                            <button
+                                class="btn text-light dropdown-toggle border-dark"
+                                type="button"
+                                data-bs-toggle="dropdown"
+                                aria-expanded="false"
+                            >
+                                <img src="../imgs/login.png" class="rounded-circle circle-border" alt="" />
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-dark dropdown-menu-md-end">
+                                <li><a class="dropdown-item" href="#">My Profile</a></li>
+                                <div class="d-none d-sm-block d-md-none">
+                                    <li><a class="dropdown-item" href="./cart.html">Cart</a></li>
+                                    <li><a class="dropdown-item" href="#">Wishlist</a></li>
+                                    <li><a class="dropdown-item" href="#">Notifications</a></li>
+                                </div>
+                                <li><hr class="dropdown-divider" /></li>
+                                <li><a class="dropdown-item" href="#">Sign Out</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="input-group w-100">
+                        <button
+                            class="btn btn-outline-secondary dropdown-toggle text-light"
+                            type="button"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false"
+                        >
+                            All Categories
+                        </button>
+
+                        <input
+                            type="text"
+                            class="form-control bg-dark text-white"
+                            placeholder="Search..."
+                            aria-label="Text input with dropdown button"
+                            style="border: #6c757d 1px solid"
+                        />
+                        <ul class="dropdown-menu dropdown-menu-dark">
+                            <li><a class="dropdown-item" href="#">Kindle</a></li>
+                            <li><a class="dropdown-item" href="categories.html">Electronics</a></li>
+                            <li><a class="dropdown-item" href="#">Fashion</a></li>
+                            <li><a class="dropdown-item" href="#">Games</a></li>
+                            <li><a class="dropdown-item" href="#">Animals</a></li>
+                        </ul>
+                        <button type="button" class="btn btn-warning">
+                            <i class="bi bi-search text-white fs-5"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="d-flex gap-4">
+                    <div class="align-self-center d-none d-md-block">
+                        <a href="#" class="btn icon">
+                            <i class="bi bi-heart text-white fs-5"></i>
+                        </a>
+                        <a href="./cart.html" class="btn icon">
+                            <i class="bi bi-cart text-white fs-5"></i>
+                        </a>
+                        <a href="#" class="btn icon">
+                            <i class="bi bi-bell text-white fs-5"></i>
+                        </a>
+                    </div>
+
+                    <div class="dropdown d-none d-md-block">
+                        <button
+                            class="btn text-light dropdown-toggle border-dark"
+                            type="button"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false"
+                        >
+                            <img src="../imgs/login.png" class="rounded-circle circle-border" alt="" />
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-dark dropdown-menu-md-end">
+                            <li><a class="dropdown-item" href="#">My Profile</a></li>
+                            <div class="d-none d-sm-block d-md-none">
+                                <li><a class="dropdown-item" href="./cart.html">Cart</a></li>
+                                <li><a class="dropdown-item" href="#">Wishlist</a></li>
+                                <li><a class="dropdown-item" href="#">Notifications</a></li>
+                            </div>
+                            <li><hr class="dropdown-divider" /></li>
+                            <li><a class="dropdown-item" href="#">Sign Out</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <main class="product-section">
+            <div class="container my-5">
+                <div class="row">
+                    <div class="col-lg-8 border-bottom">
+                        <div class="headline">
+                            <div class="head-name p-2 bg-dark text-light">
+                                <h4>Laptop</h4>
+                                <span>Apple 2022 MacBook Pro Laptop with M2 chip</span>
+                            </div>
+                            <div class="head-price p-2 text-center bg-warning text-light">
+                                <h4>$1149</h4>
+                                <span>$1200 <u class="text-dark">save</u> $51</span>
+                            </div>
+                        </div>
+                        <div class="pt-2">
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star text-warning"></i>
+                        </div>
+                        <p class="text-info" style="font-size: 12px">1,974 Reviews | 32 Quastions</p>
+                        <div id="product-carousel" class="carousel slide" data-bs-ride="true">
+                            <div class="carousel-indicators">
+                                <button
+                                    type="button"
+                                    data-bs-target="#product-carousel"
+                                    data-bs-slide-to="0"
+                                    class="active bg-dark"
+                                    aria-current="true"
+                                    aria-label="Slide 1"
+                                ></button>
+                                <button
+                                    type="button"
+                                    data-bs-target="#product-carousel"
+                                    data-bs-slide-to="1"
+                                    class="bg-dark"
+                                    aria-label="Slide 2"
+                                ></button>
+                                <button
+                                    type="button"
+                                    data-bs-target="#product-carousel"
+                                    data-bs-slide-to="2"
+                                    class="bg-dark"
+                                    aria-label="Slide 3"
+                                ></button>
+                            </div>
+                            <div class="carousel-inner" style="width: 20rem; margin: 0 auto">
+                                <div class="carousel-item active">
+                                    <img src="/imgs/mac1.webp" class="d-block w-100" alt="..." />
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="/imgs/mac2.webp" class="d-block w-100" alt="..." />
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="/imgs/mac3.webp" class="d-block w-100" alt="..." />
+                                </div>
+                            </div>
+                            <button
+                                class="carousel-control-prev"
+                                type="button"
+                                data-bs-target="#product-carousel"
+                                data-bs-slide="prev"
+                            >
+                                <i class="bi bi-chevron-left fs-2 text-dark"></i>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button
+                                class="carousel-control-next"
+                                type="button"
+                                data-bs-target="#product-carousel"
+                                data-bs-slide="next"
+                            >
+                                <i class="bi bi-chevron-right fs-2 text-dark"></i>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                        <div class="about-product">
+                            <h5>About The Product.</h5>
+                            <ul>
+                                <li><b>Brand |</b> Apple</li>
+                                <li><b>Model Name |</b> MacBook Pro</li>
+                                <li><b>Screen Size |</b> 13.3 Inches</li>
+                                <li><b>Hard Drive Szie |</b> 256 GB</li>
+                                <li><b>Ram Memory |</b> 8GB</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="btn-container border-bottom border-dark pb-2 d-flex justify-content-around pb-3">
+                            <button class="btn btn-outline-warning w-25" style="font-size: 14px">8G RAM</button>
+                            <button class="btn btn-outline-warning w-25" style="font-size: 14px">16G RAM</button>
+                            <button class="btn btn-outline-warning w-25" style="font-size: 14px">32G RAM</button>
+                        </div>
+                        <div class="stock-info border-bottom border-dark p-3">
+                            <h4 class="text-success">In Stock</h4>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, debitis obcaecati?
+                                Labore ullam porro tempore!
+                            </p>
+                            <p class="text-info" style="margin-bottom: 0">
+                                Free Return <i class="bi bi-chevron-down"></i>
+                            </p>
+                            <p class="text-info" style="margin-bottom: 0">Free Delivery</p>
+                            <p class="text-info" style="margin-bottom: 0">
+                                <i class="bi bi-geo-alt-fill"></i> Delivery to Egypt
+                            </p>
+                            <div class="d-flex justify-content-between">
+                                <p>
+                                    <b><span class="fs-5 text-warning">$</span>1200</b>
+                                </p>
+                                <div>
+                                    <span class="fs-5"><b>Qty:</b></span>
+                                    <select name="qty" id="">
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="add-product d-flex flex-column align-items-center justify-content-around p-3">
+                            <button class="btn btn-warning w-75">Add To Cart</button>
+                            <br />
+                            <button class="btn btn-secondary w-75">Add To wishlist</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+        <script src="product.js"></script>
+    </body>
+</html>
