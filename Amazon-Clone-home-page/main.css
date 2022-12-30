@@ -1,0 +1,86 @@
+@import url("https://fonts.cdnfonts.com/css/amazon-ember");
+
+body {
+  font-family: "Amazon Ember", sans-serif;
+}
+
+.form-control::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: white;
+}
+
+.btn-warning {
+  background-color: #ff9900;
+  border-color: #ff9900;
+}
+
+.btn-warning:hover {
+  background-color: rgba(255, 153, 0, 0.9);
+  border-color: rgba(255, 153, 0, 0.9);
+}
+
+.form-control:focus {
+  box-shadow: none;
+}
+
+.dropdown-item:active {
+  background-color: inherit;
+}
+.icon:focus {
+  background-color: #ff9900;
+}
+h2 {
+  padding-left: 15px;
+}
+aside {
+  width: 20%;
+}
+.content {
+  width: 80%;
+}
+.accordion-button:not(.collapsed)::after {
+  background-image: none;
+  transform: none;
+}
+.accordion-button:not(.collapsed) {
+  box-shadow: none;
+}
+
+.accordion-button:focus {
+  border-color: transparent;
+  box-shadow: none;
+}
+
+.card-img {
+  width: 50%;
+}
+
+.bi-star-fill,
+.bi-star {
+  color: #ff9900;
+}
+.back {
+  background-color: rgb(139, 132, 132);
+}
+.bi-heart:focus {
+  background-color: red;
+}
+aside {
+  height: 150vh;
+}
+/* .carousel-control-next-icon {
+  background-color: antiquewhite;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 0;
+} */
+/* .carousel-control-next-icon {
+  background-color: #ff9900;
+  position: absolute;
+  top: 0;
+} */
+/* .bi-cart-fill:hover{
+background-color: #ff9900;
+} */
