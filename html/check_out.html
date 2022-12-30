@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="eg">
+    <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../assets/fontawesome-free-6.2.1-web/css/all.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css"/>
+    <link rel="stylesheet" href="../assets/dist/style.css"/>
+    <link rel="stylesheet" href="../main.css" />
+
+    <title>Check-Out</title>
+</head>
+<body>
+  <nav class="navbar navbar-dark navbar-expand-lg bg-dark fs-3">
+    <div class="container-fluid d-flex flex-column flex-md-row">
+        <div
+            class="col-md-6 col-12 flex-column flex-md-row d-flex justify-content-evenly align-items-md-center"
+        >
+            <div class="d-flex flex-row justify-content-between align-items-normal">
+                <a class="navbar-brand pt-3" href="index.html">
+                    <img src="../imgs/amazon.png" alt="Amazon logo" height="36" />
+                </a>
+                <div class="dropdown d-block d-md-none">
+                    <button
+                        class="btn text-light dropdown-toggle border-dark"
+                        type="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                    >
+                        <img src="../imgs/login.png" class="rounded-circle circle-border" alt="" />
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-dark dropdown-menu-md-end">
+                        <li><a class="dropdown-item" href="#">My Profile</a></li>
+                        <div class="d-none d-sm-block d-md-none">
+                            <li><a class="dropdown-item" href="./cart.html">Cart</a></li>
+                            <li><a class="dropdown-item" href="#">Wishlist</a></li>
+                            <li><a class="dropdown-item" href="#">Notifications</a></li>
+                        </div>
+                        <li><hr class="dropdown-divider" /></li>
+                        <li><a class="dropdown-item" href="#">Sign Out</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="input-group w-100">
+                <button
+                    class="btn btn-outline-secondary dropdown-toggle text-light"
+                    type="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                >
+                    All Categories
+                </button>
+
+                <input
+                    type="text"
+                    class="form-control bg-dark text-white"
+                    placeholder="Search..."
+                    aria-label="Text input with dropdown button"
+                    style="border: #6c757d 1px solid"
+                />
+                <ul class="dropdown-menu dropdown-menu-dark">
+                    <li><a class="dropdown-item" href="#">Kindle</a></li>
+                    <li><a class="dropdown-item" href="categories.html">Electronics</a></li>
+                    <li><a class="dropdown-item" href="#">Fashion</a></li>
+                    <li><a class="dropdown-item" href="#">Games</a></li>
+                    <li><a class="dropdown-item" href="#">Animals</a></li>
+                </ul>
+                <button type="button" class="btn btn-warning">
+                    <i class="bi bi-search text-white fs-5"></i>
+                </button>
+            </div>
+        </div>
+        <div class="d-flex gap-4">
+            <div class="align-self-center d-none d-md-block">
+                <a href="#" class="btn icon">
+                    <i class="bi bi-heart text-white fs-5"></i>
+                </a>
+                <a href="./cart.html" class="btn icon">
+                    <i class="bi bi-cart text-white fs-5"></i>
+                </a>
+                <a href="#" class="btn icon">
+                    <i class="bi bi-bell text-white fs-5"></i>
+                </a>
+            </div>
+
+            <div class="dropdown d-none d-md-block">
+                <button
+                    class="btn text-light dropdown-toggle border-dark"
+                    type="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                >
+                    <img src="../imgs/login.png" class="rounded-circle circle-border" alt="" />
+                </button>
+                <ul class="dropdown-menu dropdown-menu-dark dropdown-menu-md-end">
+                    <li><a class="dropdown-item" href="#">My Profile</a></li>
+                    <div class="d-none d-sm-block d-md-none">
+                        <li><a class="dropdown-item" href="./cart.html">Cart</a></li>
+                        <li><a class="dropdown-item" href="#">Wishlist</a></li>
+                        <li><a class="dropdown-item" href="#">Notifications</a></li>
+                    </div>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li><a class="dropdown-item" href="#">Sign Out</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>
+
+    <div class="container check-out d-flex mt-5">
+        <div class="w-75" >
+    <div class="shipping">
+        <a href="" class="btn btn-outline-warning fs-4" type="button" data-bs-toggle="collapse" data-bs-target="#shiping">
+         1 Shipping address
+        </a>
+      </p>
+      <div>
+        <div class="collapse" id="shiping">
+          <div class="card card-body">
+            <fieldset>
+                <legend>Your adress</legend>
+                <hr>
+                <form>
+                    <label class="form-label">Street Name</label>
+                    <input class="form-control w-50" type="text" placeholder="e.g Talaat Harb Street"/>
+                    <label class="form-label">Building Name/No</label>
+                    <input class="form-control w-50" type="text" placeholder="e.g Talaat Harb Street"/>
+                    <label class="form-label">Floor/apartment,or villa no</label>
+                    <input class="form-control w-50" type="text" placeholder="e.g Talaat Harb Street"/>
+                    <label class="form-label">City/Area</label>
+                    <input class="form-control w-50" type="text" placeholder="e.g Talaat Harb Street"/>
+                    <label class="form-label">Nearest Landmark</label>
+                    <input class="form-control w-50" type="text" placeholder="e.g Talaat Harb Street"/>
+                    <label class="form-label">Governate</label>
+                    <input class="form-control w-50" type="text" placeholder="e.g Talaat Harb Street"/>
+                    <label class="form-label">Adress type</label> <br>
+                    <input type="radio" name="adresstype" value="Home"/>
+                    <label class="form-label">Home</label>
+                    <input class=" ms-2" type="radio" name="adresstype" value="Office"/>
+                    <label class="form-label">Office</label>
+                    <br>
+                    <button class="btn btn-warning text-light mt-1" type="submit">submit</button>
+                </form>
+            </fieldset>
+          </div>
+        </div>
+      </div>
+      </div>
+      <div class="payment mt-5">
+        <a href="" class="btn btn-outline-warning fs-4" type="button" data-bs-toggle="collapse" data-bs-target="#payment">
+         2 Payment method
+        </a>
+      </p>
+      <div>
+        <div class="collapse" id="payment">
+          <div class="card card-body">
+            <fieldset>
+                <legend>Credit and Debit Cards</legend>
+                <hr>
+               <div>
+               
+                <i class="fa-solid fa-plus text-light fs-3"></i><img class="ms-2" src="../assets/images/card-log.gif" style="width: 50px;height: 28px;"/>
+                <a class="ms-2" href=""data-bs-toggle="modal" data-bs-target="#dataModal">Add a credit or debit card</a>
+                  </div>
+  
+ 
+  <div class="modal fade" id="dataModal" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5">Add a credit or debit card</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+         <form>
+            <label>Card number</label>
+            <input class="form-control w-50" type="number"/><br>
+            <label>Name on card</label>
+            <input class="form-control w-50" type="text"/><br>
+            <label>Expiration date</label>
+            <input class="form-control w-50" type="text"/>
+         </form>
+        </div>
+        
+        <div class="modal-footer">
+          <button type="button" class="btn btn-light" data-bs-dismiss="modal">Cancel</button>
+          <button type="button" class="btn btn-warning text-light">Add your card</button>
+        </div>
+      </div>
+    </div>
+  </div>
+                
+               <legend class="mt-5">Other Payment method</legend>
+               <hr>
+             <form>
+                <input type="radio" name="cod" value="cod"/>
+                <label>Cash on Delivery (COD)</label>
+             </form>
+             <div class="mt-5">
+          <button class="btn btn-warning text-light" type="submit">use this payment method</button>
+             </div>
+              </div>
+            </fieldset>
+          </div>
+        </div>
+      </div>
+      <div class="review mt-5">
+        <a href="" class="btn btn-outline-warning fs-4" type="button" data-bs-toggle="collapse" data-bs-target="#review">
+         3 Review items and shipping
+        </a>
+      </p>
+      <div>
+        <div class="collapse" id="review">
+          <div class="card card-body">
+            <div class="item">
+       
+                <div class="item-img">
+                    <img src="../assets/images/iphone.jpg"/>
+                </div>
+                <div class="description">
+                <div class="item-desc">
+                   <p>New Apple iPhone 13 with FaceTime (128GB)</p>
+                   <span class="text-success">In Stock</span>
+                
+            </div>
+            <div class="item-desc">
+                <p class="text-secondary">Color:<span class="text-dark">black</span></p>
+                
+             
+         </div>
+         <div class="item-desc">
+             <button class="btn btn-secondary text-light"><i class="bi bi-dash"></i></button><span class="text-secondary  fs-4">1</span>  <button class="btn btn-secondary text-light"><i class="bi bi-plus"></i></button>
+                
+            
+     </div>
+     <div class="item-desc">
+        <p class="text-secondary">Price:<span class="text-dark">EGP 30,000</span></p>  
+    </div>
+    </div>
+    <div class="del">
+    <button class="btn btn-danger">Delete</button></div>
+        </div>
+        <hr>
+        
+        <div class="item">
+           
+                <div class="item-img">
+                    <img src="../assets/images/samsung.jpg"/>
+                </div>
+                <div class="description">
+                <div class="item-desc">
+                   <p>
+                    Samsung Galaxy A23 LTE Android Smartphone, 128GB</p>
+                   <span class="text-secondary">Out of Stock</span>
+                
+            </div>
+            <div class="item-desc">
+                <p class="text-secondary">Color:<span class="text-dark">white</span></p>
+                
+             
+         </div>
+         <div class="item-desc">
+             <button class="btn btn-secondary text-light"><i class="bi bi-dash"></i></button><span class="text-secondary  fs-4">1</span>  <button class="btn btn-secondary text-light"><i class="bi bi-plus"></i></button>
+                
+            
+     </div>
+     <div class="item-desc">
+        <p class="text-secondary">Price:<span class="text-dark">EGP 10,000</span></p>  
+    </div>
+    </div>
+    <div class="del">
+    <button class="btn btn-danger">Delete</button></div>
+        </div>
+    
+        <hr>
+    
+    
+        <div class="item">
+           
+                <div class="item-img">
+                    <img src="../assets/images/xiaomi.jpg"/>
+                </div>
+                <div class="description">
+                <div class="item-desc">
+                   <p>Xiaomi Redmi 10C 4G (Graphite Gray, 4GB RAM, 128 GB</p>
+                   <span class="text-success">In Stock</span>
+                
+            </div>
+            <div class="item-desc">
+                <p class="text-secondary">Color:<span class="text-dark">grey</span></p>
+                
+             
+         </div>
+         <div class="item-desc">
+             <button class="btn btn-secondary text-light"><i class="bi bi-dash"></i></button><span class="text-secondary  fs-4">1</span>  <button class="btn btn-secondary text-light"><i class="bi bi-plus"></i></button>
+                
+            
+     </div>
+     <div class="item-desc">
+        <p class="text-secondary">Price:<span class="text-dark">EGP 6,000</span></p>  
+    </div>
+    </div>
+    <div class="del">
+    <button class="btn btn-danger">Delete</button>
+    </div>
+        </div>
+          </div>
+        </div>
+      </div>
+      </div>
+      <div class="summary d-flex mt-5 border border-4 border-light rounded" style="height: 125px;">
+      <div class="check w-75 mt-3">
+        <button class="btn ms-4"><a class="btn btn-warning text-light fs-5" href="#">Place your order</a></button>
+    </div>
+        <div class="mt-2">
+        <span class="text-danger fs-4">Order total:EGP 46100</span><br>
+        <span class="text-disable fw-light text-muted">By placing your order, you agree to amazon.eg's privacy notice and conditions of use.</span>
+        </div>
+    </div>
+    </div>
+        <div class="bill border border-4 border-light rounded ms-5 w-25">
+            <div class="text-center">
+            <button class="btn btn-warning mt-3 text-light w-75">Place your order</button>
+            <p class="mt-1 text-center fw-light text-muted">By placing your order, you agree to amazon.eg's privacy and 
+                conditions of use.</p>
+                <hr>
+            </div>
+                <h5 class="ms-1">Order Summary</h5>
+                <span class="ms-1 fw-light">Items</span> <span class="ms-1">EGP 46000</span> <br>
+                <span class="ms-1 fw-light">Shipping & handling</span> <span class="ms-1">EGP 100</span><br>
+                <span class="ms-1 fw-light">Cash on Delivery Fee</span> <span class="ms-1">EGP 46100</span>
+                <hr>
+                <span class="text-danger fs-5 ms-1">Order Summary</span>
+                <span class="text-danger ms-1">EGP 46100
+                </span>
+                <div class="bg-light mt-3 text-center" style="height:70px;">
+                <a class="mt-2 fw-light" href="#">How are shipping costs calculated?
+                </a><br>
+                <a class="mt-2 fw-light" href="#">How are shipping costs calculated?
+                </a>
+            </div>
+            </div>
+            
+      </div>
+ 
+      <footer class="bg-dark text-white">
+        <div
+            class="d-flex py-5 gap-5 align-items-start justify-content-center flex-column flex-md-row justify-content-md-center"
+        >
+            <img
+                src="../imgs/amazon.png"
+                alt="Amazon logo"
+                height="36"
+                class="align-self-center align-self-md-start"
+            />
+            <ul
+                class="d-flex gap-5 flex-column flex-md-row flex-wrap justify-content-center align-self-center"
+            >
+                <div class="row">
+                    <li class="col-6 col">
+                        <h6>Get to Know Us</h6>
+                        <ul class="p-0">
+                            <li><a class="text-secondary text-decoration-none" href="#">Careers</a></li>
+                            <li><a class="text-secondary text-decoration-none" href="#">About Us</a></li>
+                            <li>
+                                <a class="text-secondary text-decoration-none" href="#">Amazon Science</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="col-6 col">
+                        <h6>Shop with Us</h6>
+                        <ul class="p-0">
+                            <li>
+                                <a class="text-secondary text-decoration-none" href="#">Your Account</a>
+                            </li>
+                            <li>
+                                <a class="text-secondary text-decoration-none" href="#">Your Orders</a>
+                            </li>
+                            <li>
+                                <a class="text-secondary text-decoration-none" href="#">Your Addresses</a>
+                            </li>
+                            <li>
+                                <a class="text-secondary text-decoration-none" href="#">Your Lists</a>
+                            </li>
+                        </ul>
+                    </li>
+                </div>
+                <div class="row">
+                    <li class="col-6 col">
+                        <h6>Make Money with Us</h6>
+                        <ul class="p-0">
+                            <li>
+                                <a class="text-secondary text-decoration-none" href="#">
+                                    and build your brand</a
+                                >
+                            </li>
+                            <li>
+                                <a class="text-secondary text-decoration-none" href="#"
+                                    >Advertise Your Products</a
+                                >
+                            </li>
+                            <li>
+                                <a class="text-secondary text-decoration-none" href="#">Sell on Amazon</a>
+                            </li>
+                            <li>
+                                <a class="text-secondary text-decoration-none" href="#"
+                                    >Fulfillment by Amazon</a
+                                >
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="col-6 col">
+                        <h6>Let Us Help You</h6>
+                        <ul class="p-0">
+                            <li><a class="text-secondary text-decoration-none" href="#">Help</a></li>
+                            <li>
+                                <a class="text-secondary text-decoration-none" href="#"
+                                    >Shipping & Delivery</a
+                                >
+                            </li>
+                            <li>
+                                <a class="text-secondary text-decoration-none" href="#"
+                                    >Returns & Replacements</a
+                                >
+                            </li>
+                            <li>
+                                <a class="text-secondary text-decoration-none" href="#"
+                                    >Amazon App Download</a
+                                >
+                            </li>
+                        </ul>
+                    </li>
+                </div>
+            </ul>
+        </div>
+        <hr />
+        <ul class="d-flex gap-5 m-0 align-items-start justify-content-center">
+            <li>&copy; Amazon.com 2023</li>
+            <li><a class="text-secondary text-decoration-none" href="#">Conditions of Use & Sale</a></li>
+            <li><a class="text-secondary text-decoration-none" href="#">Privacy Notice</a></li>
+            <li><a class="text-secondary text-decoration-none" href="#">Cookies Notice</a></li>
+        </ul>
+    </footer>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>

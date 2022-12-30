@@ -7,96 +7,508 @@
         <title>Amazon Clone</title>
         <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css" />
         <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css" />
+        <link rel="stylesheet" href="../assets/dist/index.css" />
+        <link rel="stylesheet" href="../assets/dist/main.css" />
     </head>
     <body>
-        <nav class="navbar navbar-expand-lg bg-light">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">Navbar</a>
-                <button
-                    class="navbar-toggler"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent"
-                    aria-controls="navbarSupportedContent"
-                    aria-expanded="false"
-                    aria-label="Toggle navigation"
+        <nav class="navbar navbar-dark navbar-expand-lg bg-dark fs-3">
+            <div class="container-fluid d-flex flex-column flex-md-row">
+                <div
+                    class="col-md-6 col-12 flex-column flex-md-row d-flex justify-content-evenly align-items-md-center"
                 >
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Link</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a
-                                class="nav-link dropdown-toggle"
-                                href="#"
-                                role="button"
+                    <div class="d-flex flex-row justify-content-between align-items-normal">
+                        <a class="navbar-brand pt-3" href="index.html">
+                            <img src="../imgs/amazon.png" alt="Amazon logo" height="36" />
+                        </a>
+                        <div class="dropdown d-block d-md-none">
+                            <button
+                                class="btn text-light dropdown-toggle border-dark"
+                                type="button"
                                 data-bs-toggle="dropdown"
                                 aria-expanded="false"
                             >
-                                Dropdown
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <img src="../imgs/login.png" class="rounded-circle circle-border" alt="" />
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-dark dropdown-menu-md-end">
+                                <li><a class="dropdown-item" href="#">My Profile</a></li>
+                                <div class="d-none d-sm-block d-md-none">
+                                    <li><a class="dropdown-item" href="./cart.html">Cart</a></li>
+                                    <li><a class="dropdown-item" href="#">Wishlist</a></li>
+                                    <li><a class="dropdown-item" href="#">Notifications</a></li>
+                                </div>
                                 <li><hr class="dropdown-divider" /></li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                <li><a class="dropdown-item" href="./signin.html">Sign Out</a></li>
                             </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link disabled">Disabled</a>
-                        </li>
-                    </ul>
-                    <form class="d-flex" role="search">
+                        </div>
+                    </div>
+                    <div class="input-group w-100">
+                        <button
+                            class="btn btn-outline-secondary dropdown-toggle text-light"
+                            type="button"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false"
+                        >
+                            All Categories
+                        </button>
+
                         <input
-                            class="form-control me-2"
-                            type="search"
-                            placeholder="Search"
-                            aria-label="Search"
+                            type="text"
+                            class="form-control bg-dark text-white"
+                            placeholder="Search..."
+                            aria-label="Text input with dropdown button"
+                            style="border: #6c757d 1px solid"
                         />
-                        <button class="btn btn-outline-success" type="submit">Search</button>
-                    </form>
+                        <ul class="dropdown-menu dropdown-menu-dark">
+                            <li><a class="dropdown-item" href="#">Kindle</a></li>
+                            <li><a class="dropdown-item" href="categories.html">Electronics</a></li>
+                            <li><a class="dropdown-item" href="#">Fashion</a></li>
+                            <li><a class="dropdown-item" href="#">Games</a></li>
+                            <li><a class="dropdown-item" href="#">Animals</a></li>
+                        </ul>
+                        <button type="button" class="btn btn-warning">
+                            <i class="bi bi-search text-white fs-5"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="d-flex gap-4">
+                    <div class="align-self-center d-none d-md-block">
+                        <a href="#" class="btn icon">
+                            <i class="bi bi-heart text-white fs-5"></i>
+                        </a>
+                        <a href="./cart.html" class="btn icon">
+                            <i class="bi bi-cart text-white fs-5"></i>
+                        </a>
+                        <a href="#" class="btn icon">
+                            <i class="bi bi-bell text-white fs-5"></i>
+                        </a>
+                    </div>
+
+                    <div class="dropdown d-none d-md-block">
+                        <button
+                            class="btn text-light dropdown-toggle border-dark"
+                            type="button"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false"
+                        >
+                            <img src="../imgs/login.png" class="rounded-circle circle-border" alt="" />
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-dark dropdown-menu-md-end">
+                            <li><a class="dropdown-item" href="#">My Profile</a></li>
+                            <div class="d-none d-sm-block d-md-none">
+                                <li><a class="dropdown-item" href="./cart.html">Cart</a></li>
+                                <li><a class="dropdown-item" href="#">Wishlist</a></li>
+                                <li><a class="dropdown-item" href="#">Notifications</a></li>
+                            </div>
+                            <li><hr class="dropdown-divider" /></li>
+                            <li><a class="dropdown-item" href="./signin.html">Sign Out</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </nav>
-        <main>
-            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="..." class="d-block w-100" alt="..." />
+
+        <div class="d-flex">
+            <aside class="bg-dark text-light fs-4">
+                <div class="catagories">
+                    <div class="small-content fs-3 p-0 ms-3 pt-3">
+                        <i class="bi bi-grid-fill pl-2"></i>
+                        <span class="pl-2">Categories</span>
                     </div>
-                    <div class="carousel-item">
-                        <img src="..." class="d-block w-100" alt="..." />
+                    <ul class="list-unstyled fs-5 p-0 w-75 mx-auto">
+                        <li class="ms-3">
+                            <a class="text-decoration-none text-light" href="#">Echo and Alexa</a>
+                        </li>
+                        <li class="ms-3">
+                            <a class="text-decoration-none text-light" href="#">Kindle</a>
+                        </li>
+                        <li class="ms-3">
+                            <a class="text-decoration-none text-light" href="#">Books</a>
+                        </li>
+                        <li class="ms-3">
+                            <a class="text-decoration-none text-light" href="../html/categories.html"
+                                >Electronics</a
+                            >
+                        </li>
+                        <li class="ms-3">
+                            <a class="text-decoration-none text-light" href="#">Home and Garden</a>
+                        </li>
+                        <li class="ms-3">
+                            <a class="text-decoration-none text-light" href="#">Fashion</a>
+                        </li>
+                        <li class="ms-3">
+                            <a class="text-decoration-none text-light" href="#">Health and Beauty</a>
+                        </li>
+                        <li class="ms-3">
+                            <a class="text-decoration-none text-light" href="#">Automotive</a>
+                        </li>
+                        <li class="ms-3">
+                            <a class="text-decoration-none text-light" href="#">Sport and Tourism</a>
+                        </li>
+                        <li class="ms-3">
+                            <a class="text-decoration-none text-light" href="#">Games</a>
+                        </li>
+                        <li class="ms-3">
+                            <a class="text-decoration-none text-light" href="#">Film and Music</a>
+                        </li>
+                        <li class="ms-3">
+                            <a class="text-decoration-none text-light" href="#">Animals</a>
+                        </li>
+                        <li class="ms-3">
+                            <a class="text-decoration-none text-light" href="#">Hobby</a>
+                        </li>
+                        <li class="ms-3">
+                            <a class="text-decoration-none text-light" href="#">Gift Cards</a>
+                        </li>
+                    </ul>
+                </div>
+                <ul class="fs-3 p-0 pt-3 ms-3">
+                    <li class="d-block w-100 gap-3 justify-content-start align-items-center">
+                        <i class="bi bi-percent pl-2"></i>
+                        <span class="pl-2">Sell on Amazon</span>
+                    </li>
+
+                    <li class="d-block w-100 gap-3 justify-content-start align-items-center">
+                        <i class="bi bi-question-circle pl-2"></i>
+                        <span class="pl-2">Help</span>
+                    </li>
+                </ul>
+                <div class="fs-4 ms-3 py-5">
+                    <a class="text-decoration-none text-light" href="#">
+                        <i class="bi bi-box-arrow-in-right pl-2"></i>
+                        <span class="pl-2">Log Out</span></a
+                    >
+                </div>
+            </aside>
+            <div class="content">
+                <div>
+                    <img class="w-100" src="../assets/images/layout.jpg" alt="" />
+                </div>
+                <div class="text-center">
+                    <div class="row bs-0 p-3">
+                        <div class="col">
+                            <div>
+                                <div class="d-flex flex-column bg-secondry rounded-4 pb-3 shadow-lg">
+                                    <i class="bi bi-heart fs-5 d-flex align-self-end p-3"></i>
+                                    <img
+                                        src="../assets/images/1.webp"
+                                        class="card-img d-flex align-self-center m-2"
+                                        alt=""
+                                    />
+                                </div>
+                                <div class="ms-2 pt-2 d-flex align-items-start flex-column">
+                                    <h5 class="pt-2">Iphone 13 Pro Max</h5>
+                                    <p class="fw-light fs-6 text-start">
+                                        Get it Saturday, January 7 - Tuesday, January 10 EGP 21.00 shipping
+                                    </p>
+                                    <div class="gab-5">
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star"></i>
+                                    </div>
+                                    <h5>$2600</h5>
+                                    <p class="fw-light fs-6 text-decoration-line-through">$3200</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div>
+                                <div class="d-flex flex-column bg-secondry rounded-4 pb-3 shadow-lg">
+                                    <i class="bi bi-heart fs-5 d-flex align-self-end p-3"></i>
+                                    <img
+                                        src="../assets/images/2.webp"
+                                        class="card-img d-flex align-self-center m-2"
+                                        alt=""
+                                    />
+                                </div>
+                                <div class="ms-2 pt-2 d-flex align-items-start flex-column">
+                                    <h5 class="pt-2">Iphone 13 Pro Max</h5>
+                                    <p class="fw-light fs-6 text-start">
+                                        Get it Saturday, January 7 - Tuesday, January 10 EGP 21.00 shipping
+                                    </p>
+                                    <div class="gab-5">
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star"></i>
+                                    </div>
+                                    <h5>$2600</h5>
+                                    <p class="fw-light fs-6 text-decoration-line-through">$3200</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div>
+                                <div class="d-flex flex-column bg-secondry rounded-4 pb-3 shadow-lg">
+                                    <i class="bi bi-heart fs-5 d-flex align-self-end p-3"></i>
+                                    <img
+                                        src="../assets/images/1.webp"
+                                        class="card-img d-flex align-self-center m-2"
+                                        alt=""
+                                    />
+                                </div>
+                                <div class="ms-2 pt-2 d-flex align-items-start flex-column">
+                                    <h5 class="pt-2">Iphone 13 Pro Max</h5>
+                                    <p class="fw-light fs-6 text-start">
+                                        Get it Saturday, January 7 - Tuesday, January 10 EGP 21.00 shipping
+                                    </p>
+                                    <div class="gab-5">
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star"></i>
+                                    </div>
+                                    <h5>$2600</h5>
+                                    <p class="fw-light fs-6 text-decoration-line-through">$3200</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div>
+                                <div class="d-flex flex-column bg-secondry rounded-4 pb-3 shadow-lg">
+                                    <i class="bi bi-heart fs-5 d-flex align-self-end p-3"></i>
+                                    <img
+                                        src="../assets/images/4.webp"
+                                        class="card-img d-flex align-self-center m-2"
+                                        alt=""
+                                    />
+                                </div>
+                                <div class="ms-2 pt-2 d-flex align-items-start flex-column">
+                                    <h5 class="pt-2">Iphone 13 Pro Max</h5>
+                                    <p class="fw-light fs-6 text-start">
+                                        Get it Saturday, January 7 - Tuesday, January 10 EGP 21.00 shipping
+                                    </p>
+                                    <div class="gab-5">
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star"></i>
+                                    </div>
+                                    <h5>$2600</h5>
+                                    <p class="fw-light fs-6 text-decoration-line-through">$3200</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="carousel-item">
-                        <img src="..." class="d-block w-100" alt="..." />
+                    <div class="row bs-0 p-3">
+                        <div class="col">
+                            <div>
+                                <div class="d-flex flex-column bg-secondry rounded-4 pb-3 shadow-lg">
+                                    <i class="bi bi-heart fs-5 d-flex align-self-end p-3"></i>
+                                    <img
+                                        src="../assets/images/4.webp"
+                                        class="card-img d-flex align-self-center m-2"
+                                        alt=""
+                                    />
+                                </div>
+                                <div class="ms-2 pt-2 d-flex align-items-start flex-column">
+                                    <h5 class="pt-2">Iphone 13 Pro Max</h5>
+                                    <p class="fw-light fs-6 text-start">
+                                        Get it Saturday, January 7 - Tuesday, January 10 EGP 21.00 shipping
+                                    </p>
+                                    <div class="gab-5">
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star"></i>
+                                    </div>
+                                    <h5>$2600</h5>
+                                    <p class="fw-light fs-6 text-decoration-line-through">$3200</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div>
+                                <div class="d-flex flex-column bg-secondry rounded-4 pb-3 shadow-lg">
+                                    <i class="bi bi-heart fs-5 d-flex align-self-end p-3"></i>
+                                    <img
+                                        src="../assets/images/3.webp"
+                                        class="card-img d-flex align-self-center m-2"
+                                        alt=""
+                                    />
+                                </div>
+                                <div class="ms-2 pt-2 d-flex align-items-start flex-column">
+                                    <h5 class="pt-2">Iphone 13 Pro Max</h5>
+                                    <p class="fw-light fs-6 text-start">
+                                        Get it Saturday, January 7 - Tuesday, January 10 EGP 21.00 shipping
+                                    </p>
+                                    <div class="gab-5">
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star"></i>
+                                    </div>
+                                    <h5>$2600</h5>
+                                    <p class="fw-light fs-6 text-decoration-line-through">$3200</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div>
+                                <div class="d-flex flex-column bg-secondry rounded-4 pb-3 shadow-lg">
+                                    <i class="bi bi-heart fs-5 d-flex align-self-end p-3"></i>
+                                    <img
+                                        src="../assets/images/1.webp"
+                                        class="card-img d-flex align-self-center m-2"
+                                        alt=""
+                                    />
+                                </div>
+                                <div class="ms-2 pt-2 d-flex align-items-start flex-column">
+                                    <h5 class="pt-2">Iphone 13 Pro Max</h5>
+                                    <p class="fw-light fs-6 text-start">
+                                        Get it Saturday, January 7 - Tuesday, January 10 EGP 21.00 shipping
+                                    </p>
+                                    <div class="gab-5">
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star"></i>
+                                    </div>
+                                    <h5>$2600</h5>
+                                    <p class="fw-light fs-6 text-decoration-line-through">$3200</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div>
+                                <div class="d-flex flex-column bg-secondry rounded-4 pb-3 shadow-lg">
+                                    <i class="bi bi-heart fs-5 d-flex align-self-end p-3"></i>
+                                    <img
+                                        src="../assets/images/2.webp"
+                                        class="card-img d-flex align-self-center m-2"
+                                        alt=""
+                                    />
+                                </div>
+                                <div class="ms-2 pt-2 d-flex align-items-start flex-column">
+                                    <h5 class="pt-2">Iphone 13 Pro Max</h5>
+                                    <p class="fw-light fs-6 text-start">
+                                        Get it Saturday, January 7 - Tuesday, January 10 EGP 21.00 shipping
+                                    </p>
+                                    <div class="gab-5 p-0">
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star"></i>
+                                    </div>
+                                    <h5>$2600</h5>
+                                    <p class="fw-light fs-6 text-decoration-line-through">$3200</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <button
-                    class="carousel-control-prev"
-                    type="button"
-                    data-bs-target="#carouselExampleControls"
-                    data-bs-slide="prev"
-                >
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button
-                    class="carousel-control-next"
-                    type="button"
-                    data-bs-target="#carouselExampleControls"
-                    data-bs-slide="next"
-                >
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
             </div>
-        </main>
+        </div>
+        <div class="bg-secondary text-center p-4">
+            <a class="text-light" href="#">Back To Top</a>
+        </div>
+
+        <footer class="bg-dark text-white">
+            <div
+                class="d-flex py-5 gap-5 align-items-start justify-content-center flex-column flex-md-row justify-content-md-center"
+            >
+                <img
+                    src="../imgs/amazon.png"
+                    alt="Amazon logo"
+                    height="36"
+                    class="align-self-center align-self-md-start"
+                />
+                <ul
+                    class="d-flex gap-5 flex-column flex-md-row flex-wrap justify-content-center align-self-center"
+                >
+                    <div class="row">
+                        <li class="col-6 col">
+                            <h6>Get to Know Us</h6>
+                            <ul class="p-0">
+                                <li><a class="text-secondary text-decoration-none" href="#">Careers</a></li>
+                                <li><a class="text-secondary text-decoration-none" href="#">About Us</a></li>
+                                <li>
+                                    <a class="text-secondary text-decoration-none" href="#">Amazon Science</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="col-6 col">
+                            <h6>Shop with Us</h6>
+                            <ul class="p-0">
+                                <li>
+                                    <a class="text-secondary text-decoration-none" href="#">Your Account</a>
+                                </li>
+                                <li>
+                                    <a class="text-secondary text-decoration-none" href="#">Your Orders</a>
+                                </li>
+                                <li>
+                                    <a class="text-secondary text-decoration-none" href="#">Your Addresses</a>
+                                </li>
+                                <li>
+                                    <a class="text-secondary text-decoration-none" href="#">Your Lists</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </div>
+                    <div class="row">
+                        <li class="col-6 col">
+                            <h6>Make Money with Us</h6>
+                            <ul class="p-0">
+                                <li>
+                                    <a class="text-secondary text-decoration-none" href="#">
+                                        and build your brand</a
+                                    >
+                                </li>
+                                <li>
+                                    <a class="text-secondary text-decoration-none" href="#"
+                                        >Advertise Your Products</a
+                                    >
+                                </li>
+                                <li>
+                                    <a class="text-secondary text-decoration-none" href="#">Sell on Amazon</a>
+                                </li>
+                                <li>
+                                    <a class="text-secondary text-decoration-none" href="#"
+                                        >Fulfillment by Amazon</a
+                                    >
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="col-6 col">
+                            <h6>Let Us Help You</h6>
+                            <ul class="p-0">
+                                <li><a class="text-secondary text-decoration-none" href="#">Help</a></li>
+                                <li>
+                                    <a class="text-secondary text-decoration-none" href="#"
+                                        >Shipping & Delivery</a
+                                    >
+                                </li>
+                                <li>
+                                    <a class="text-secondary text-decoration-none" href="#"
+                                        >Returns & Replacements</a
+                                    >
+                                </li>
+                                <li>
+                                    <a class="text-secondary text-decoration-none" href="#"
+                                        >Amazon App Download</a
+                                    >
+                                </li>
+                            </ul>
+                        </li>
+                    </div>
+                </ul>
+            </div>
+            <hr />
+            <ul class="d-flex gap-5 m-0 align-items-start justify-content-center">
+                <li>&copy; Amazon.com 2023</li>
+                <li><a class="text-secondary text-decoration-none" href="#">Conditions of Use & Sale</a></li>
+                <li><a class="text-secondary text-decoration-none" href="#">Privacy Notice</a></li>
+                <li><a class="text-secondary text-decoration-none" href="#">Cookies Notice</a></li>
+            </ul>
+        </footer>
         <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
     </body>
 </html>
