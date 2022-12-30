@@ -1,0 +1,76 @@
+@media (max-width: 1000px) {
+  .del {
+    position: absolute;
+    top: 100%;
+  }
+}
+@media (max-width: 770px) {
+  .item .description {
+    display: block;
+    width: 100%;
+    margin: 1px;
+  }
+  .item .description .item-desc {
+    width: 100%;
+  }
+  .del {
+    position: absolute;
+    top: 100%;
+  }
+}
+@media (max-width: 400px) {
+  .item {
+    display: block !important;
+  }
+  .item .item-img {
+    width: 100%;
+  }
+  .item .description {
+    display: block;
+    width: 100%;
+    margin: 1px;
+  }
+  .item .description .item-desc {
+    width: 100%;
+  }
+  .del {
+    position: absolute;
+    bottom: 0;
+    display: block;
+    margin-top: 2px;
+  }
+}
+@media (max-width: 1200px) {
+  .summary {
+    display: block !important;
+    align-items: center !important;
+  }
+  .container .summary {
+    display: none !important;
+  }
+  .container .bill {
+    width: 50vw !important;
+    margin-left: 0 !important;
+  }
+}
+@media (max-width: 590px) {
+  .container {
+    align-items: center !important;
+    width: 100vw !important;
+    margin-left: 0 !important;
+    padding: 0 !important;
+  }
+  .container .bill {
+    width: 100vw !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    border: 0.5px light solid !important;
+  }
+  .bill div {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+}
+
+/*# sourceMappingURL=mediaQuery.css.map */

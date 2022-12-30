@@ -1,0 +1,140 @@
+@import url("https://fonts.cdnfonts.com/css/amazon-ember");
+@media (max-width: 1000px) {
+  .del {
+    position: absolute;
+    top: 100%;
+  }
+}
+@media (max-width: 770px) {
+  .item .description {
+    display: block;
+    width: 100%;
+    margin: 1px;
+  }
+  .item .description .item-desc {
+    width: 100%;
+  }
+  .del {
+    position: absolute;
+    top: 100%;
+  }
+}
+@media (max-width: 400px) {
+  .item {
+    display: block !important;
+  }
+  .item .item-img {
+    width: 100%;
+  }
+  .item .description {
+    display: block;
+    width: 100%;
+    margin: 1px;
+  }
+  .item .description .item-desc {
+    width: 100%;
+  }
+  .del {
+    position: absolute;
+    bottom: 0;
+    display: block;
+    margin-top: 2px;
+  }
+}
+@media (max-width: 1200px) {
+  .summary {
+    display: block !important;
+    align-items: center !important;
+  }
+  .container .summary {
+    display: none !important;
+  }
+  .container .bill {
+    width: 50vw !important;
+    margin-left: 0 !important;
+  }
+}
+@media (max-width: 590px) {
+  .container {
+    align-items: center !important;
+    width: 100vw !important;
+    margin-left: 0 !important;
+    padding: 0 !important;
+  }
+  .container .bill {
+    width: 100vw !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    border: 0.5px light solid !important;
+  }
+  .bill div {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+}
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Amazon Ember", sans-serif;
+}
+
+.form-control::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: white;
+}
+
+.btn-warning {
+  background-color: #ff9900;
+  border-color: #ff9900;
+}
+
+.btn-warning:hover {
+  background-color: rgba(255, 153, 0, 0.9);
+  border-color: rgba(255, 153, 0, 0.9);
+}
+
+.form-control:focus {
+  box-shadow: none;
+}
+
+.dropdown-item:active {
+  background-color: inherit;
+}
+
+.icon:focus {
+  background-color: #ff9900;
+}
+
+/* .bi-cart-fill:hover{
+background-color: #ff9900;
+} */
+.container {
+  background-color: white;
+}
+
+.item {
+  position: relative;
+  display: flex;
+}
+
+.description {
+  display: flex;
+}
+
+.item .item-desc {
+  width: 30%;
+  margin: 2px;
+}
+
+.del {
+  position: absolute;
+  right: 0;
+  top: 80%;
+}
+
+/*# sourceMappingURL=style.css.map */

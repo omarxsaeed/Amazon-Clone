@@ -1,8 +1,14 @@
+@import './mediaQuery';
 @import url("https://fonts.cdnfonts.com/css/amazon-ember");
 
+*{
+    margin:0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+}
+
 body {
-    margin: 0;
-    padding: 0;
     font-family: "Amazon Ember", sans-serif;
 }
 
@@ -28,48 +34,30 @@ body {
 .dropdown-item:active {
     background-color: inherit;
 }
-
 .icon:focus {
-    background-color: #ff9900;
-    /* color: red; */
-}
-
-.circle-border {
-    border: 1.5px solid #ff9900;
-    padding: 0.1rem;
-}
-
-.list-group-item-action:hover {
     background-color: #ff9900;
 }
 /* .bi-cart-fill:hover{
 background-color: #ff9900;
 } */
-
-#prime {
-    display: inline-block;
+.container{
+    background-color: white;
+}
+.item{
+    position: relative;
+    display: flex;
 }
 
-.prime-img {
-    width: 15%;
+.description{
+    display: flex;
 }
-
-.text-warning {
-    color: #ff9900 !important;
+.item .item-desc{
+    width: 30%;
+    margin: 2px;
 }
-
-.bg-secondary {
-    background-color: #40464e !important;
-}
-
-input[type="checkbox"] {
-    background-color: #ff9900;
-    color: black;
-}
-
-@media (max-width: 768px) {
-    .res-side {
-        display: flex;
-        flex-direction: column;
-    }
+.del{
+ 
+ position: absolute;
+ right: 0;
+ top: 80%;
 }
