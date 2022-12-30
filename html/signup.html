@@ -24,19 +24,15 @@
     text-decoration: none;
     font-weight: 700;
   }
-  @media (max-width: 1025px){
+  @media (max-width: 900px){
       body{
           background-size:auto;
       }
 
   }
-  .forget a{
-    text-decoration: none;
-    font-weight: 700;
-  }
 </style>
 </head>
-<body style="">
+<body>
   <nav class="navbar navbar-dark navbar-expand-lg bg-dark fs-3">
     <div class="container-fluid">
         <div class="col-6 d-flex justify-content-evenly align-items-center">
@@ -102,42 +98,42 @@
     </div>
 </nav>
   <header class="">
-    <div class="container "style="margin-top: 5.5rem;">
-      <div class="row align-items-center">
+    <div class="container  "style="margin-top: 5.5rem;">
+      <div class="row align-items-center justify-content-center">
         
-        <div class="col-7 opacity-75 ">
-          <h2>Find everything you love at <b>Amazon </b><p>the world's largest online marketplace.</p></h2>
-          <div class="w-50  mt-5 shadow-sm --bs-body-color-rgb bg-light rounded-5 p-4">
-            <h5><b>New here?</b></h5>
-            <button type="button" class="w-100 my-2 py-3 text-center btn btn-info --bs-btn-bg:#c3e8f0d4 shadow-sm" ><a href="/html/signup.html" style="text-decoration: none; color: black;"><b>Create your free Amazon account</b></a></button>
-            <p class="p-2"style="font-size:smaller">Shop anything, from books and groceries to gadgets and furniture</p>
-          </div>
-      </div>
+       
       
-      <div class="col-4 opacity-75">
+      <div class="col-lg-6 col-sm-12 opacity-75 ">
         <div class="shadow-sm --bs-body-color-rgb bg-light rounded-5 p-5 ">
-            <h3 class="mb-3 text-center">Log in to your account</h3>
+            <h3 class="mb-3 text-center">Create your new Account</h3>
               <form>
+                <div class="input-group mb-3">
+                  <span class="input-group-text" id="basic-addon1"><i class="bi bi-person-fill"></i></span>
+                  <input type="text" class="form-control" placeholder="User name" aria-label="userName" aria-describedby="basic-addon1">
+                </div>
                 <div class="input-group mb-3">
                   <span class="input-group-text" id="basic-addon1"><i class="bi bi-envelope-fill"></i></span>
                   <input type="text" class="form-control" placeholder="Email" aria-label="Email" aria-describedby="basic-addon1">
                 </div>
                 <div class="input-group mb-3">
                   <span class="input-group-text" id="basic-addon1"><i class="bi bi-lock-fill"></i></span>
-                  <input type="text" class="form-control" placeholder="Password" aria-label="Password" aria-describedby="basic-addon1">
+                  <input type="text" class="form-control" placeholder="new password" aria-label="Password" aria-describedby="basic-addon1">
+                </div>
+                <div class="input-group mb-3">
+                  <span class="input-group-text" id="basic-addon1"><i class="bi bi-lock-fill"></i></span>
+                  <input type="text" class="form-control" placeholder="confirm password" aria-label="Password" aria-describedby="basic-addon1">
                 </div>
                 <div class="row">
                  <div class="col-5">
-                  <button type="button" class="btn btn-warning w-100 h-75"><b>Log in</b></button>
+                  <button type="button" class="btn btn-warning w-100"><b>Sign Up</b></button>
                 </div>
                  <div class="col-7">
-                   <p style="font-size: smaller;">By logging in, you agree to Amazon's <b>Conditions of Use</b> and <b>privacy Notice.</b></p>
-                  </div>
+                    <input type="checkbox" class="checkbox"> <b>I agree with terms & conditions</b>         
+                         </div>
                 </div>
                 <div class="forget">
-                  <a href="#">I forgot my password</a>
-                  <br>
-                  <a href="#">I can't log in</a>
+                  <a href="/html/signin.html">Already have an account ?</a>
+                  
                 </div>
               </form>
               </div>
